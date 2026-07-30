@@ -187,6 +187,23 @@
             }
 
         }
+        #gallery{
+            margin-top:30px;
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:15px;
+        }
+
+        .gift-photo{
+            width:220px;
+            height:220px;
+            object-fit:cover;
+            border-radius:20px;
+            border:5px solid white;
+            box-shadow:0 0 20px rgba(255,255,255,.6);
+            animation:fade 1s;
+        }
     </style>
 
 </head>
@@ -214,7 +231,7 @@
 
         </div>
 
-        <div id="countdown"></div>
+        
 
         <img class="gift"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Gift_font_awesome.svg/512px-Gift_font_awesome.svg.png"
@@ -225,14 +242,28 @@
         <button onclick="openGift()">Open Your Gift 🎁</button>
 
         <div id="card" class="hidden card">
-
+            
             <h2>🎊 Surprise! 🎊</h2>
 
             <p>
                 You are awesome, AJ!<br>
-                May all your wishes come true! ❤️
+                May all your wishes come true! ❤️ <br>
+                look how far you grown up and now you're a bigboy na, tan awa taas paka ni imo mommy HAHAHA
             </p>
-
+            <div id="gallery" class="hidden">
+                <img src="photo1.jpg" class="gift-photo">
+                <img src="photo2.jpg" class="gift-photo">
+                <img src="photo3.jpg" class="gift-photo">
+                <img src="photo4.jpg" class="gift-photo">
+                <img src="photo5.jpg" class="gift-photo">
+                <img src="photo6.jpg" class="gift-photo">
+                <img src="photo7.jpg" class="gift-photo">
+                <img src="photo8.jpg" class="gift-photo">
+                <img src="photo9.jpg" class="gift-photo">
+                <img src="photo10.jpg" class="gift-photo">
+                <img src="photo11.jpg" class="gift-photo">
+            
+            </div>
         </div>
 
     </div>
@@ -303,10 +334,11 @@
 
         function openGift() {
             playMusic();
+
             document.getElementById("card").classList.remove("hidden");
+            document.getElementById("gallery").classList.remove("hidden");
 
             alert("🎉 Happy 11th Birthday AJ! 🎂");
-
         }
 
 
