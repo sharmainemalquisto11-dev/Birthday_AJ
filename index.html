@@ -1,303 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy 11th Birthday AJ!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 11th Birthday AJ!</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
-}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-body{
-    overflow:hidden;
-    background:linear-gradient(135deg,#4facfe,#00f2fe,#ff9a9e,#fad0c4);
-    background-size:400% 400%;
-    animation:bgMove 15s infinite alternate;
-    color:white;
-    text-align:center;
-}
+        body {
+            overflow: hidden;
+            background: linear-gradient(135deg, #4facfe, #00f2fe, #ff9a9e, #fad0c4);
+            background-size: 400% 400%;
+            animation: bgMove 15s infinite alternate;
+            color: white;
+            text-align: center;
+        }
 
-@keyframes bgMove{
-0%{background-position:left;}
-100%{background-position:right;}
-}
+        @keyframes bgMove {
+            0% {
+                background-position: left;
+            }
 
-.container{
-    position:relative;
-    z-index:5;
-    padding-top:40px;
-}
+            100% {
+                background-position: right;
+            }
+        }
 
-h1{
-    font-size:60px;
-    text-shadow:3px 3px 10px black;
-}
+        .container {
+            position: relative;
+            z-index: 5;
+            padding-top: 40px;
+        }
 
-h2{
-    font-size:34px;
-    margin:10px;
-}
+        h1 {
+            font-size: 60px;
+            text-shadow: 3px 3px 10px black;
+        }
 
-.message{
-    width:80%;
-    max-width:700px;
-    margin:auto;
-    font-size:22px;
-    line-height:1.6;
-}
+        h2 {
+            font-size: 34px;
+            margin: 10px;
+        }
 
-#countdown{
-    margin-top:25px;
-    font-size:35px;
-    font-weight:bold;
-    color:yellow;
-}
+        .message {
+            width: 80%;
+            max-width: 700px;
+            margin: auto;
+            font-size: 22px;
+            line-height: 1.6;
+        }
 
-/* Balloons */
+        #countdown {
+            margin-top: 25px;
+            font-size: 35px;
+            font-weight: bold;
+            color: yellow;
+        }
 
-.balloon{
-    position:absolute;
-    bottom:-200px;
-    width:70px;
-    height:90px;
-    border-radius:50%;
-    animation:float 12s linear infinite;
-}
+        /* Balloons */
 
-.balloon:after{
-    content:"";
-    position:absolute;
-    width:2px;
-    height:120px;
-    background:white;
-    left:50%;
-    top:90px;
-}
+        .balloon {
+            position: absolute;
+            bottom: -200px;
+            width: 70px;
+            height: 90px;
+            border-radius: 50%;
+            animation: float 12s linear infinite;
+        }
 
-@keyframes float{
+        .balloon:after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 120px;
+            background: white;
+            left: 50%;
+            top: 90px;
+        }
 
-0%{
-transform:translateY(0);
-}
+        @keyframes float {
 
-100%{
-transform:translateY(-130vh);
-}
+            0% {
+                transform: translateY(0);
+            }
 
-}
+            100% {
+                transform: translateY(-130vh);
+            }
 
-/* Gift */
+        }
 
-.gift{
-    width:160px;
-    margin:40px auto;
-    cursor:pointer;
-    animation:bounce 2s infinite;
-}
+        /* Gift */
 
-@keyframes bounce{
+        .gift {
+            width: 160px;
+            margin: 40px auto;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+        }
 
-0%,100%{
-transform:translateY(0);
-}
+        @keyframes bounce {
 
-50%{
-transform:translateY(-15px);
-}
+            0%,
+            100% {
+                transform: translateY(0);
+            }
 
-}
+            50% {
+                transform: translateY(-15px);
+            }
 
-/* Fireworks */
+        }
 
-.firework{
-position:absolute;
-width:6px;
-height:6px;
-border-radius:50%;
-animation:explode 1.5s infinite;
-}
+        /* Fireworks */
 
-@keyframes explode{
+        .firework {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            animation: explode 1.5s infinite;
+        }
 
-0%{
-transform:scale(0);
-opacity:1;
-}
+        @keyframes explode {
 
-100%{
-transform:scale(18);
-opacity:0;
-}
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
 
-}
+            100% {
+                transform: scale(18);
+                opacity: 0;
+            }
 
-/* Button */
+        }
 
-button{
+        /* Button */
 
-padding:15px 35px;
-font-size:22px;
-border:none;
-border-radius:50px;
-background:#ff4081;
-color:white;
-cursor:pointer;
-margin-top:25px;
+        button {
 
-}
+            padding: 15px 35px;
+            font-size: 22px;
+            border: none;
+            border-radius: 50px;
+            background: #ff4081;
+            color: white;
+            cursor: pointer;
+            margin-top: 25px;
 
-button:hover{
+        }
 
-background:#e91e63;
+        button:hover {
 
-}
+            background: #e91e63;
 
-.hidden{
-display:none;
-}
+        }
 
-.card{
+        .hidden {
+            display: none;
+        }
 
-margin-top:20px;
-font-size:25px;
-animation:fade 2s;
+        .card {
 
-}
+            margin-top: 20px;
+            font-size: 25px;
+            animation: fade 2s;
 
-@keyframes fade{
+        }
 
-from{opacity:0;}
+        @keyframes fade {
 
-to{opacity:1;}
+            from {
+                opacity: 0;
+            }
 
-}
+            to {
+                opacity: 1;
+            }
 
-</style>
+        }
+    </style>
 
 </head>
 
 <body>
 
-<!-- Music -->
-<audio autoplay loop controls style="position:absolute;top:10px;right:10px;z-index:20;" src="Happy Birthday To You.mp3" id="myAudio">
-</audio>
+    <!-- Music -->
+    <audio loop controls style="position:absolute;top:10px;right:10px;z-index:20;" src="Happy Birthday To You.mp3"
+        id="myAudio">
+    </audio>
 
-<div class="container">
+    <div class="container">
 
-<h1>🎉 Happy Birthday 🎉</h1>
+        <h1>🎉 Happy Birthday 🎉</h1>
 
-<h2>AJ is Turning 11! 🎂</h2>
+        <h2>AJ is Turning 11! 🎂</h2>
 
-<div class="message">
+        <div class="message">
 
-May your birthday be filled with lots of happiness, exciting adventures,
-wonderful surprises, delicious cake, amazing gifts, and unforgettable memories.
-Keep smiling, keep dreaming, and always believe in yourself.
-May God bless you with good health, wisdom, joy, and success.
-Have the happiest 11th birthday ever, AJ! 🎈🎁🎂
+            May your birthday be filled with lots of happiness, exciting adventures,
+            wonderful surprises, delicious cake, amazing gifts, and unforgettable memories.
+            Keep smiling, keep dreaming, and always believe in yourself.
+            May God bless you with good health, wisdom, joy, and success.
+            Have the happiest 11th birthday ever, AJ! 🎈🎁🎂
 
-</div>
+        </div>
 
-<div id="countdown"></div>
+        <div id="countdown"></div>
 
-<img class="gift"
-src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Gift_font_awesome.svg/512px-Gift_font_awesome.svg.png"
-onclick="openGift()">
+        <img class="gift"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Gift_font_awesome.svg/512px-Gift_font_awesome.svg.png"
+            onclick="openGift()">
 
-<br>
+        <br>
 
-<button onclick="openGift()">Open Your Gift 🎁</button>
+        <button onclick="openGift()">Open Your Gift 🎁</button>
 
-<div id="card" class="hidden card">
+        <div id="card" class="hidden card">
 
-<h2>🎊 Surprise! 🎊</h2>
+            <h2>🎊 Surprise! 🎊</h2>
 
-<p>
-You are awesome, AJ!<br>
-May all your wishes come true! ❤️
-</p>
+            <p>
+                You are awesome, AJ!<br>
+                May all your wishes come true! ❤️
+            </p>
 
-</div>
+        </div>
 
-</div>
+    </div>
 
-<script>
-
-
-
-
-// Balloons
-
-const colors=["red","blue","yellow","green","pink","purple","orange"];
-
-for(let i=0;i<25;i++){
-
-let b=document.createElement("div");
-
-b.className="balloon";
-
-b.style.left=Math.random()*100+"vw";
-
-b.style.background=colors[Math.floor(Math.random()*colors.length)];
-
-b.style.animationDuration=(8+Math.random()*7)+"s";
-
-b.style.animationDelay=Math.random()*5+"s";
-
-document.body.appendChild(b);
-
-}
+    <script>
 
 
-// Fireworks
-
-setInterval(()=>{
-
-let f=document.createElement("div");
-
-f.className="firework";
-
-f.style.left=Math.random()*100+"vw";
-
-f.style.top=Math.random()*60+"vh";
-
-f.style.background=
-colors[Math.floor(Math.random()*colors.length)];
-
-document.body.appendChild(f);
-
-setTimeout(()=>{
-
-f.remove();
-
-},1500);
-
-},300);
 
 
-// Gift
+        // Balloons
 
-function openGift(){
+        const colors = ["red", "blue", "yellow", "green", "pink", "purple", "orange"];
 
-document.getElementById("card").classList.remove("hidden");
+        for (let i = 0; i < 25; i++) {
 
-alert("🎉 Happy 11th Birthday AJ! 🎂");
+            let b = document.createElement("div");
 
-}
+            b.className = "balloon";
 
-  document.addEventListener('click', function() {
-    var audio = document.getElementById('myAudio');
-    audio.play().catch(function(error) {
-      console.log("Autoplay prevented by browser:", error);
-    });
-  }, { once: true }); // '{ once: true }'
+            b.style.left = Math.random() * 100 + "vw";
 
-</script>
+            b.style.background = colors[Math.floor(Math.random() * colors.length)];
+
+            b.style.animationDuration = (8 + Math.random() * 7) + "s";
+
+            b.style.animationDelay = Math.random() * 5 + "s";
+
+            document.body.appendChild(b);
+
+        }
+
+
+        // Fireworks
+
+        setInterval(() => {
+
+            let f = document.createElement("div");
+
+            f.className = "firework";
+
+            f.style.left = Math.random() * 100 + "vw";
+
+            f.style.top = Math.random() * 60 + "vh";
+
+            f.style.background =
+                colors[Math.floor(Math.random() * colors.length)];
+
+            document.body.appendChild(f);
+
+            setTimeout(() => {
+
+                f.remove();
+
+            }, 1500);
+
+        }, 300);
+
+
+        // Gift
+
+        function playMusic() {
+            var audio = document.getElementById('myAudio');
+            audio.muted = false; // Ensure audio is not muted
+            audio.play().catch(function (error) {
+                console.log("Autoplay prevented:", error);
+            });
+        }
+
+        function openGift() {
+            playMusic();
+            document.getElementById("card").classList.remove("hidden");
+
+            alert("🎉 Happy 11th Birthday AJ! 🎂");
+
+        }
+
+
+    </script>
 
 </body>
+
 </html>
